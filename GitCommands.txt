@@ -13,4 +13,34 @@ git commit -m --> mi apre una finestra di dialogo per inserire commenti multirig
 
 git commit --> in genere da errore, può servirmi a risolvere conflitti quando c'è più di una modifica allo stesso file operata da utenti diversi. per risolvere l'errore premo esc +:wq e poi ricarico il tutto
 
-gir push --> sincronizza in rete i file added con il commento associato.
+git push --> sincronizza in rete i file added con il commento associato.
+
+git pull --> scarica le versioni dei files presenti in rete tenendo conto di eventuali modifiche e conflitti operate da altri utenti.
+
+git reset --> mi consente di rimuovere files dalla staging area prima che questi vengano caricati in rete con il git push.
+
+git log --> mi consente di vedere i commit effettuati assieme ad un codice univoco identificativo, all'autore e al messaggio ad esso associato.
+
+git remote -v --> mi consente di vedere indirizzo di storage della mia repository di riferimento
+
+git branch -a --> mi consente di vedere quali sono le diverse branches del mio progetto.
+
+git diff --> mi fa vedere i cambiamenti esatti che ho operato sul codice nei diversi files modificati.
+
+git branch branchName --> mi consente di creare una nuova branch del progetto. scrivendo solo git branch ottengo un listing delle diverse branch presenti sul computer con evidenziata in verde quella attualmente in uso
+
+git checkout branchName --> mi consente di selezionare la branch su cui andare a lavorare.
+
+git  push -u origin branchName --> comando per sincronizzare alla repository on-line quella creata localmente. -u serve solo al momento della creazione della repository
+
+
+git branch -a --> mi restituisce tutte le branch locali e nel cloud relative alla repository
+
+git branch --merged --> mi dice funo ad ora quali branch ho unito al master
+
+git merge branchName unisce le modifiche della branch al master.
+
+ git branch -d branchName mi consente di cancellare la branch al termine del merge.
+
+
+git push origin --delete branchName --> mi consente di eliminare le branch nel cloud. devo effettuare sia questo delete che il locale al termine del merge.
