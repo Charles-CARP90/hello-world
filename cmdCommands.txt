@@ -1,0 +1,9 @@
+
+comandi generici cmd windows:
+
+cd = current directory
+	cd.. --> cartella superiore
+	cd folderName --> apro sottocartella
+
+dir --> mi fa un listing delle directory presenti nella cartella di lavoro.
+
